@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALFANDEGA BRASILEIRA</title>
+</head>
+<body>
+    <h1>SISTEMA ALFANDEGARIO BRASILEIRO</h1>
+    País: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="verif()">
+    <div id="res"></div>
+    <script>
+        function verif() {
+            var nac = window.document.querySelector("input#txtnac")
+            var res = window.document.querySelector("div#res")
+            res.innerHTML = `${nac}`
+        }
+    </script>
+</body>
+</html>
