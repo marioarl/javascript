@@ -11,17 +11,6 @@
     Velocidade do carro:<input type="number" name="txtvel" id="txtvel"> Km/h
     <input type="button" value="Verificar" onclick="calcular()">
     <div id="res"></div>
-    <script>
-        function calcular() {
-            var txtv = window.document.getElementById('txtvel')
-            var res = window.document.querySelector("div#res")
-            var vel = Number(txtv.value)
-            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}</strong>Km/h</p>`
-            if (vel > 60) {
-                res.innerHTML += `<p>Voce está <strong>MULTADO</strong> por excesso de velocidade</p>`
-            }
-            res.innerHTML += `Dirija sempre com cinto de segurança!`
-        }
-    </script>
+    <script src="script2.js"></script>
 </body>
 </html>
